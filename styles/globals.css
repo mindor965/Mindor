@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    /* Use Montserrat globally */
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #1A1F2C;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent;
+  }
+  
+  .gradient-text-hero {
+    @apply bg-gradient-to-r from-primary via-primary-light to-accent bg-clip-text text-transparent;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-8 py-3.5 rounded-xl font-semibold text-base transition-all duration-300 cursor-pointer relative overflow-hidden;
+  }
+  
+  .btn::before {
+    content: '';
+    @apply absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-500;
+  }
+  
+  .btn:hover::before {
+    @apply left-[100%];
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-primary-light text-white shadow-primary;
+  }
+  
+  .btn-primary:hover {
+    @apply -translate-y-0.5 shadow-primary-hover;
+  }
+  
+  .btn-primary-large {
+    @apply bg-gradient-to-r from-primary to-primary-light text-white px-10 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-primary;
+  }
+  
+  .btn-primary-large:hover {
+    @apply -translate-y-0.5 scale-105 shadow-primary-hover;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-primary border-2 border-primary;
+  }
+  
+  .btn-secondary:hover {
+    @apply bg-primary text-white -translate-y-0.5;
+  }
+  
+  .btn-secondary-large {
+    @apply bg-transparent text-white border-2 border-white px-10 py-4 rounded-full font-semibold text-lg transition-all duration-300 backdrop-blur-md;
+  }
+  
+  .btn-secondary-large:hover {
+    @apply bg-white text-primary -translate-y-0.5;
+  }
+  
+  .btn-full {
+    @apply w-full;
+  }
+  
+  .btn-arrow {
+    @apply ml-2 transition-transform duration-300;
+  }
+  
+  .btn:hover .btn-arrow {
+    @apply translate-x-1;
+  }
+  
+  .container {
+    @apply max-w-6xl mx-auto px-6;
+  }
+  
+  .section-header {
+    @apply text-center mb-24;
+  }
+  
+  .section-title {
+    @apply font-secondary text-4xl md:text-5xl lg:text-6xl font-bold mb-6 gradient-text;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-text-secondary max-w-2xl mx-auto;
+  }
+  
+  .section-header-enhanced {
+    @apply text-center mb-16;
+  }
+  
+  .section-badge {
+    @apply inline-block px-4 py-2 bg-gradient-to-r from-primary/10 to-primary-light/10 text-primary font-semibold rounded-full text-sm mb-4;
+  }
+  
+  .section-title-enhanced {
+    @apply font-secondary text-3xl md:text-4xl lg:text-5xl font-bold mb-4 gradient-text;
+  }
+  
+  .section-subtitle-enhanced {
+    @apply text-lg text-text-secondary max-w-3xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Phone Input Styles */
+.phone-input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.phone-input-wrapper:focus-within {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.phone-input-wrapper .PhoneInputInput {
+  border: none;
+  outline: none;
+  padding: 0.75rem 1rem;
+  flex: 1;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.phone-input-wrapper .PhoneInputCountry {
+  padding: 0.75rem 0.5rem;
+  border-right: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  display: flex;
+  align-items: center;
+}
+
+.phone-input-wrapper .PhoneInputCountrySelect {
+  border: none;
+  background: transparent;
+  padding: 0.25rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+}
+
+.phone-input-wrapper .PhoneInputCountryIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  border-radius: 2px;
+}
+
+.phone-input-wrapper .PhoneInputCountrySelectArrow {
+  opacity: 0.5;
+  margin-left: 0.25rem;
+} 
