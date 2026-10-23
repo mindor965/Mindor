@@ -16,7 +16,7 @@ const Footer = () => {
             <p className="text-gray-600 text-sm mb-4 lg:ml-3">
               Innovative technology solutions for modern businesses. We create digital experiences that matter.
             </p>
-            
+
             <div className="flex space-x-4 lg:ml-3">
               <Link href="https://wa.me/918928210967?text=Hi%20Mindor%20Team,%20I%20need%20assistance%20with%20your%20services." target="_blank" rel="noopener noreferrer" className="transition-colors duration-200 hover:text-green-600">
                 <img src="/assets/whatsapp.png" alt="WhatsApp" className="w-6 h-6" />
@@ -34,11 +34,16 @@ const Footer = () => {
           </div>
 
           <div className="col-span-1 lg:ml-9">
-            <h3 className="text-lg font-semibold mb-4" style={{color:'#2F2F2F'}}>Pages</h3>
+            <h3 className="text-lg font-semibold mb-4" style={{ color: '#2F2F2F' }}>Pages</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-gray-600 hover:text-purple-600 transition-colors duration-200 text-sm">
                   Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/work" className="text-gray-600 hover:text-purple-600 transition-colors duration-200 text-sm">
+                  Portfolio & Work
                 </Link>
               </li>
               <li>
@@ -50,7 +55,7 @@ const Footer = () => {
           </div>
 
           <div className="col-span-1">
-            <h3 className="text-lg font-semibold mb-4" style={{color:'#2F2F2F'}}>Services</h3>
+            <h3 className="text-lg font-semibold mb-4" style={{ color: '#2F2F2F' }}>Services</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/custom-web-development-services" className="text-gray-600 hover:text-purple-600 transition-colors duration-200 text-sm">
@@ -86,7 +91,7 @@ const Footer = () => {
           </div>
 
           <div className="col-span-1">
-            <h3 className="text-lg font-semibold text-gray-800 mb-4" style={{color:'#2F2F2F'}}>More Pages</h3>
+            <h3 className="text-lg font-semibold text-gray-800 mb-4" style={{ color: '#2F2F2F' }}>More Pages</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/privacy-policy" className="text-gray-600 hover:text-purple-600 transition-colors duration-200 text-sm">
@@ -102,7 +107,7 @@ const Footer = () => {
           </div>
 
           <div className="col-span-1">
-            <h3 className="text-lg font-semibold text-gray-800 mb-4" style={{color:'#2F2F2F'}}>Stay Connected</h3>
+            <h3 className="text-lg font-semibold text-gray-800 mb-4" style={{ color: '#2F2F2F' }}>Stay Connected</h3>
             <p className="text-gray-600 text-sm mb-4">
               Subscribe to our newsletter for updates and insights.
             </p>
@@ -126,7 +131,7 @@ const Footer = () => {
             <p className="text-gray-600 text-sm mb-4 md:mb-0">
               © 2025 Mindor Tech. All rights reserved.
             </p>
-           
+
           </div>
         </div>
       </div>

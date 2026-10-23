@@ -12,6 +12,7 @@ const Founder = dynamic(() => import('../src/components/Founder'));
 const Business = dynamic(() => import('../src/components/Business'));
 const Mindor = dynamic(() => import('../src/components/Mindor'));
 const Service = dynamic(() => import('../src/components/Service'));
+const SelectedWork = dynamic(() => import('@/components/SelectedWork'));
 const LandingPage = dynamic(() => import('../pages/landing'));
 const Slider = dynamic(() => import('../src/components/Slider'));
 const Method = dynamic(() => import('../src/components/Method'));
@@ -68,6 +69,7 @@ const HomePage: React.FC = () => {
         <Mindor />
         <Slider />
         <Service />
+        <SelectedWork />
         <Method />
         <Business />
         <Founder />

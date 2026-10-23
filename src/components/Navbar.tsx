@@ -91,8 +91,14 @@ const Navbar: React.FC = () => {
             </span>
           </Link> */}
 
+          <Link href="/work" passHref>
+            <span className={`transition-colors text-md cursor-pointer ${isActive('/work') ? 'text-white font-semibold' : 'text-white/80 hover:text-white'}`}>
+              Work
+            </span>
+          </Link>
+
           <Link href="/blog" passHref>
-            <span className="text-white/80 hover:text-white transition-colors text-md cursor-pointer">
+            <span className={`transition-colors text-md cursor-pointer ${isActive('/blog') ? 'text-white font-semibold' : 'text-white/80 hover:text-white'}`}>
               Blog
             </span>
           </Link>
@@ -213,8 +219,14 @@ const Navbar: React.FC = () => {
               </div>
             </Link> */}
 
+            <Link href="/work" passHref>
+              <div className={`text-white font-medium text-lg py-3 px-2 rounded-lg hover:bg-white/10 transition-colors cursor-pointer ${isActive('/work') ? 'bg-white/10' : ''}`} onClick={() => setNavOpen(false)}>
+                Work
+              </div>
+            </Link>
+
             <Link href="/blog" passHref>
-              <div className="text-white font-medium text-lg py-3 px-2 rounded-lg hover:bg-white/10 transition-colors cursor-pointer" onClick={() => setNavOpen(false)}>
+              <div className={`text-white font-medium text-lg py-3 px-2 rounded-lg hover:bg-white/10 transition-colors cursor-pointer ${isActive('/blog') ? 'bg-white/10' : ''}`} onClick={() => setNavOpen(false)}>
                 Blog
               </div>
             </Link>
