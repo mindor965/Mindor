@@ -91,9 +91,9 @@ const Navbar: React.FC = () => {
             </span>
           </Link> */}
 
-          <Link href="/work" passHref>
-            <span className={`transition-colors text-md cursor-pointer ${isActive('/work') ? 'text-white font-semibold' : 'text-white/80 hover:text-white'}`}>
-              Work
+          <Link href="/portfolio" passHref>
+            <span className={`transition-colors text-md cursor-pointer ${isActive('/portfolio') ? 'text-white font-semibold' : 'text-white/80 hover:text-white'}`}>
+              Portfolio
             </span>
           </Link>
 
@@ -219,9 +219,9 @@ const Navbar: React.FC = () => {
               </div>
             </Link> */}
 
-            <Link href="/work" passHref>
-              <div className={`text-white font-medium text-lg py-3 px-2 rounded-lg hover:bg-white/10 transition-colors cursor-pointer ${isActive('/work') ? 'bg-white/10' : ''}`} onClick={() => setNavOpen(false)}>
-                Work
+            <Link href="/portfolio" passHref>
+              <div className={`text-white font-medium text-lg py-3 px-2 rounded-lg hover:bg-white/10 transition-colors cursor-pointer ${isActive('/portfolio') ? 'bg-white/10' : ''}`} onClick={() => setNavOpen(false)}>
+                Portfolio
               </div>
             </Link>
 

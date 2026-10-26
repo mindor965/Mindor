@@ -9,6 +9,15 @@ const nextConfig = {
       }
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/work',
+        destination: '/portfolio',
+        permanent: true,
+      },
+    ];
+  },
 
   typescript:{
     ignoreBuildErrors:true

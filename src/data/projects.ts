@@ -2,7 +2,7 @@ export interface Project {
   id: string;
   title: string;
   tag: string;
-  category: 'All' | 'Media & Publishing' | 'Non-Profit & Honors' | 'Lifestyle & Brands' | 'Specialized Services';
+  category: 'All' | 'Non-Profit & Honors' | 'Lifestyle & Brands' | 'Specialized Services';
   url: string;
   displayUrl: string;
   image: string;
@@ -34,14 +34,14 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 'theglobalcurrent',
-    title: 'The Global Current',
-    tag: 'Digital News & Publishing',
-    category: 'Media & Publishing',
-    url: 'https://theglobalcurrent.com',
-    displayUrl: 'theglobalcurrent.com',
-    image: '/portfolio/theglobalcurrent.png',
-    description: 'An international digital publication delivering world news, geopolitical reporting, business intelligence, and editorial insights with high reader engagement.',
+    id: 'riseforsuccess',
+    title: 'Rise For Success (RFS.ORG)',
+    tag: 'Website, Non-Profit, Next.js',
+    category: 'Non-Profit & Honors',
+    url: 'https://www.riseforsuccess.org/',
+    displayUrl: 'riseforsuccess.org',
+    image: '/portfolio/riseforsuccess.png',
+    description: 'Website for a registered non-profit training young refugee women and girls in photography and storytelling in Bidi-Bidi Settlement, Uganda, to help them reclaim their voices and build self-reliance.',
     featured: true,
   },
   {
@@ -97,17 +97,6 @@ export const projects: Project[] = [
     displayUrl: 'nivedithanaaidu.com',
     image: '/portfolio/nivedithanaaidu.png',
     description: 'Personal brand experience and client appointment platform for custom tattoo artist Niveditha Naaidu, featuring creative portfolios and direct scheduling.',
-    featured: false,
-  },
-  {
-    id: 'thewiseindian',
-    title: 'The Wise Indian',
-    tag: 'Digital Media & Impact Stories',
-    category: 'Media & Publishing',
-    url: 'https://thewiseindian.com',
-    displayUrl: 'thewiseindian.com',
-    image: '/portfolio/thewiseindian.png',
-    description: 'Digital storytelling publication celebrating changemakers, inspiring journeys, cultural developments, and impactful community initiatives across India.',
     featured: false,
   },
 ];

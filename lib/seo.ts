@@ -50,6 +50,12 @@ export const pageSEO: Record<string, { title: string; description: string, image
       "Automate repetitive processes and improve efficiency with scalable robotic process automation services.",
       image:"/og/robotic-process-automation.webp"
   },
+  "/portfolio": {
+    title: "Portfolio & Completed Projects | Mindor",
+    description:
+      "Explore Mindor's portfolio of completed client projects, digital platforms, and web applications delivered across media, travel, non-profit, and professional services.",
+    image: "/og/homepage.webp",
+  },
   "/work": {
     title: "Portfolio & Completed Projects | Mindor",
     description:
